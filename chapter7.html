@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        #header {
+            width:500px;
+            background-color:#ffd800;
+            border:1px solid #808080;
+            text-align:center;
+        }
+
+        #wrap {
+            width:500px;
+            background-color:#66dbf6;
+            border:2px solid #808080;
+            text-align:center;
+            overflow:hidden;
+        }
+
+        #content {
+            width:350px;
+            border:1px solid red;
+            float:left;
+        }
+
+        #side_banner {
+            border:1px solid red;
+            float:left;
+        }
+
+        #footer {
+            clear:both;
+            width:500px;
+            background-color:#ffd800;
+            border:3px solid #808080;
+            text-align:center;
+        }
+
+        ul li.menu {
+            color:#350a5b;
+            font-weight:bold;
+            font-size:30px;
+        }
+
+        /*실습2 : 속성 선택자는 [대괄호]로 표기*/
+
+         input {
+             color:green;
+             font-size: 30px;
+             font-weight:bold;
+        }
+
+        input[type=text] {
+            color:orange;
+            font-size: 50px;
+            width:200px;
+        }
+
+        input[type=tel] {
+            color:red;
+        }
+
+        img[src] {
+            border:5px solid green;
+        }
+
+        /*실습3*/
+         #header2, #wrap2, #footer2 {
+            border:1px solid #cccccc;
+            width:500px;
+        }
+        /*후손 (공백, 밑에 모두), 자손(>, 바로 밑에만)*/
+        div li {
+            background-color:red;
+        }
+
+        div p {
+            font-size:25px;
+        }
+
+        div > h1 {
+            font-weight:bold;
+            color:yellow;
+        }
+
+        /*실습 4 (+는 바로 밑에 하나,  ~는 밑에 있는 것 전부 다)*/
+        /*h3 밑에 div, title 밑에 div 라는 뜻*/
+        h3~div {
+            font-size:10px;
+            color:orange
+        }
+
+        h3+div {
+            font-size:20px;
+            font-weight:bold;
+            color:blue;
+        }
+
+        #title~div {
+            width:300px;
+            background-color:yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div id="header">
+    <h1>HEADER</h1>
+</div>
+
+ <div id="wrap">
+        <div id="content">
+            <h1>CONTENT</h1>
+            <ul>
+                <!--class설정 해주고 안해주고 차이-->
+                <li class="menu">menu1</li>
+                <li>menu2</li>
+                <li class="menu">menu3</li>
+                <li>menu4</li>
+                <li class="menu">menu5</li>
+            </ul>
+            <ol>
+                <li class="menu">menu1</li>
+                <li>menu2</li>
+                <li class="menu">menu3</li>
+                <li>menu4</li>
+                <li class="menu">menu5</li>
+            </ol>
+        </div>
+        <div id="side_banner">
+            <h1>BANNER</h1>
+            <a href="http://www.sba.seoul.kr" target="_blank"><img src="http://www.sba.seoul.kr/kr/images/footer/f_logo.png"></a>
+        </div>
+    </div>
+<div id="footer">
+    <h1>FOOTER</h1>
+</div>
+
+<!--실습2-->
+    <form>
+        이름 : <input type="text"/> <br/>
+        아이디 : <input type="text" /> <br/>
+        비밀번호 : <input type="password" /> <br/>
+        전화번호 : <input type="tel" /> <br/>
+    </form>
+
+    <img src="http://www.sba.seoul.kr/kr/images/header/Navi_dr.png" />
+    <br />
+
+<!--실습3-->
+    <div id="header2">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="copy">
+            <h2>global company</h2>
+        </div>
+    </div>
+
+    <div id="wrap2">
+        <p>서울시 8대 신성장동력의 하나인 녹색산업을 집중 육성하기 위해 녹색기업에 특화된 지원기관인 녹색산업지원센터는 녹색중소기업의 종합 지원체계를 구축하고 실질적 성과창출을 유도하여 서울형 녹색산업 인프라 조성과 효율적인 지원사업 시행으로 녹색중소기업의 경영내실화 및 산업 저변확대에 기여하는 것이 목적</p>
+        <ul>
+            <li><p>서울애니메이션센터</p></li>
+            <li><h1>서울시녹색산업지원센터</h1></li>
+            <li><p>DMC(디지털미디어시티)</p></li>
+            <li><h1>서울게임콘텐츠센터</h1></li>
+            <li><p>서울시우수사회적기업지원</p></li>
+            <li><h1>캐릭터포털사이트</h1></li>
+            <li><p>재미로/재미랑</p></li>
+        </ul>
+    </div>
+
+    <div id="footer2">
+        <img src="http://www.sba.seoul.kr/kr/images/footer/copyright.png">
+    </div>
+
+<!--실습4-->
+     <h3 id="title">동위 선택자(+, ~) </h3>
+    <div>div_01</div>
+    <div>div_02</div>
+    <div>div_03</div>
+    <div>div_04</div>
+    <div>div_05</div>
+</body>
+</html>
