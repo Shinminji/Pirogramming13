@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:padding="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" >
+    <title>Facebook_intro_MinJiSjin</title>
+    <style>
+
+        body{margin:0;}
+        header{
+            height: 83px;
+            background: #406299;
+            background: -moz-linear-gradient(top,  #406299 4%, #3b5998 24%, #3b5998 44%, #355a99 44%, #3b5998 52%, #3b5998 68%, #3b5998 82%, #3b5998 86%, #305a99 93%);
+            background: -webkit-linear-gradient(top,  #406299 4%,#3b5998 24%,#3b5998 44%,#355a99 44%,#3b5998 52%,#3b5998 68%,#3b5998 82%,#3b5998 86%,#305a99 93%);
+            background: linear-gradient(to bottom,  #406299 4%,#3b5998 24%,#3b5998 44%,#355a99 44%,#3b5998 52%,#3b5998 68%,#3b5998 82%,#3b5998 86%,#305a99 93%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#406299', endColorstr='#305a99',GradientType=0 );
+             }
+        section{
+            height: 550px;
+            background: rgb(255,255,255);
+            background: -moz-linear-gradient(top,  rgba(255,255,255,1) 13%, rgba(249,252,255,1) 43%, rgba(193,208,221,1) 100%);
+            background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 13%,rgba(249,252,255,1) 43%,rgba(193,208,221,1) 100%);
+            background: linear-gradient(to bottom,  rgba(255,255,255,1) 13%,rgba(249,252,255,1) 43%,rgba(193,208,221,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c1d0dd',GradientType=0 );
+
+            }
+
+        select{
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: -15px;
+                    }
+
+         span{
+            color: darkblue;
+        }
+
+         footer{
+             font-family: Adobe 고딕 Std B;
+             margin-top: 50px;
+             margin-left: 270px;
+         }
+
+        hr{
+            margin-left: -10px;
+            margin-top: -20px;
+            width:1000px;
+            height: 1px;
+            border: 0 none;
+            color: #ccc;
+            background-color: #ccc;
+        }
+
+        #descrip{
+            margin-left: 270px;
+            margin-top: 45px;
+        }
+
+        #login{
+            margin-left: 870px;
+            margin-top: -55px;
+        }
+
+        #id{
+             font-size: 12px;
+             color:#ffffff;
+             margin-left: 870px;
+             margin-top: -42px;
+        }
+
+        #Q{
+             font-size: 12px;
+             color:#8BACD3;
+             margin-left: 1035px;
+             margin-top: 30px;
+        }
+
+        #button1{
+            float: left;
+            margin-top: -55px;
+            margin-left: 1190px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border-radius: 3px;
+            background-color: #4175AF;
+            border: 0.3px solid #11437B;
+            color: white;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+
+        #join{
+            margin-top: -340px;
+            margin-left: 850px;
+            margin-bottom: 0px;
+        }
+
+        #gender{
+            margin-top: -10px;
+            font-size: 20px;
+        }
+        #join8tn{
+            padding-left: 55px;
+            padding-right: 55px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background: rgb(83,153,64);
+            background: -moz-linear-gradient(top,  rgba(83,153,64,1) 77%, rgba(41,154,11,1) 100%);
+            background: -webkit-linear-gradient(top,  rgba(83,153,64,1) 77%,rgba(41,154,11,1) 100%);
+            background: linear-gradient(to bottom,  rgba(83,153,64,1) 77%,rgba(41,154,11,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#539940', endColorstr='#299a0b',GradientType=0 );
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            border-color: #057117;
+            border-width: 1px;
+            border-radius: 5px;
+        }
+        #foot{
+            margin-left: -22px;
+            }
+
+        .p1{font-weight:bolder; font-size: 37px}
+        .p2{margin-top: -30px; font-size: 20px}
+        .p3{font-size: 20px; color: #0B2161; font-weight: bolder; font-family:Helvetica, Arial, sans-serif;}
+
+        .join1, .join2, .join3, .join4 {
+            font-size: 20px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin:5px;
+        }
+
+        .bir, .gender{
+            color: grey;
+            font-weight: bolder;
+        }
+        .jointext{
+            font-size: 11px;
+            color: grey;
+        }
+        .jointext2{
+            font-size: 12px;
+            font-weight: bolder;
+            color: grey;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<!--1. 로고 및 로그인창-->
+<header>
+    <a href="https://ko-kr.facebook.com/" title="Facebook 홈으로 이동"><img src="logo.png" width="200" height="70" style="padding-left: 250px; margin-top: 13px;"/></a>
+    <div id="login">
+        <form>
+            <input type="text" size="17"/>
+            &nbsp
+            <input type="password" size="17"/>
+        </form>
+    </div>
+
+    <p id="id">이메일 또는 휴대폰 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 비밀번호</p>
+   <p id="Q">계정을 잊으셨나요?</p>
+    <button id="button1">로그인</button>
+</header>
+
+<!--2. facebook 소개 및 가입창-->
+<section>
+    <div id="descrip">
+        <p class="p3">Facebook에서 전세계에 있는 친구, 가족, 지인들과<br/>함께 이야기를 나눠보세요.</p>
+        <img src="7XdR1KwCifL.png" height="200" width="530"/>
+    </div>
+
+    <div id="join">
+        <p class="p1">가입하기</p>
+        <p class="p2">빠르고 쉽습니다.</p>
+
+         <form>
+            <input class="join1" type="text" size="13" placeholder="성(姓)"/>
+             <input class="join2" type="text" size="13" style="font-size: 20px" placeholder="이름(성은 제외)" /></br>
+             <input class="join3" type="email" size="33" style="font-size: 20px" placeholder="휴대폰 번호 또는 이메일" /></br>
+             <input class="join4" type="password" size="33" style="font-size: 20px" placeholder="새 비밀번호" /></br>
+        </form>
+
+        <p class="bir">생일</p>
+        <select>
+            <option value="">1990년</option><option value="">1991</option><option value="">1992</option><option value="">1993</option>
+            <option value="">1994</option><option value="">1995</option><option value="">1996</option><option value="">1997</option>
+            <option value="">1998</option><option value="">1999</option><option value="">2000</option><option value="">2001</option>
+        </select>
+        <select>
+            <option value="">1월 </option><option value="">2월 </option><option value="">3월 </option><option value="">4월 </option>
+            <option value="">5월</option><option value="">6월</option><option value="">7월</option><option value="">8월</option>
+            <option value="">9월</option><option value="">10월</option><option value="">11월</option><option value="">12월</option>
+        </select>
+        <select>
+            <option value="">1일</option><option value="">2</option><option value="">3</option><option value="">4</option>
+            <option value="">5</option><option value="">6</option><option value="">7</option><option value="">8</option>
+            <option value="">9</option><option value="">10</option><option value="">11</option><option value="">12</option>
+        </select>
+
+
+        <p class="gender">성별</p>
+        <form id="gender">
+        <input type="radio" value="w"> 여성
+        <input type="radio" value="m"> 남성
+        <input type="radio" value="n"> 직접 지정
+        </form>
+
+        <p class="jointext">
+            가입하기 버튼을 클릭하면 Facebook의 <span>약관</span>, <span>데이터 정책</span> 및 <span>쿠</br>키 정책</span>
+                에 동의하게 됩니다. Facebook으로부터 SMS 알림을 받</br>을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.
+        </p>
+
+        <button id="join8tn">가입하기</button></br></br>
+        <p class="jointext2">유명인, 밴드, 비즈니스를 위한 <span>페이지 만들기</span></p>
+
+    </div>
+
+</section>
+
+<!--3. 언어 및 카테고리-->
+<footer>
+
+    <p><pre>한국어<span> English(US) Tiếng Việt Bahasa Indonesia ภาษาไทย Español 中文(简体) 日本語 Portuguê(Brasil) Français(France) Deutsch
+    </span></pre></p>
+    <div id="foot">
+    <hr><p><pre><span>    가입하기   로그인    Messenger   Facebook Lite   Watch  사람   페이지   페이지  카테고리   장소  게임   위치   Marketplace   Facebook페이  그룹  Oculus
+    Portal  Instagram  지역  기부캠페인 서비스  회사소개   광고만들기   페이지만들기   개발자  채용정보  개인정보처리방침  쿠키  AdChoices▷
+    이용약관 고객센터</span></pre></p></pre>
+    </div>
+<p class="jointext">Facebook © 2020</p>
+</footer>
+
+
+</body>
+
+</html>
